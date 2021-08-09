@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'candidates',
   templateUrl: './candidates.component.html',
@@ -23,6 +24,11 @@ export class CandidatesComponent implements OnInit {
   ngOnInit() {
   }
 
+ addToCrew(candidatename:object){
+          if(!this.crew.includes(candidatename)){
+          this.crew.push(candidatename);
+          }
+  }
   // Code the addToCrew function here:
 
 
